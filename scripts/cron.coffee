@@ -9,7 +9,7 @@ request = require 'request'
 
 module.exports = (robot) ->
   # 定期実行処理の設定
-  cronjob = new cronJob('00 * * * * *', () =>
+  cronjob = new cronJob('00 30 7 * * *', () =>
     # スクレイピング対象
     targetUrl = "http://qrank.wbsrv.net"
     request targetUrl, (_, res) ->
