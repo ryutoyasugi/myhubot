@@ -11,6 +11,9 @@ module.exports = (robot) ->
   robot.respond /HELLO$/i, (msg) ->
     msg.send "ya!"
 
+  robot.respond /hi$/i, (msg) ->
+    msg.send "hi!"
+
   robot.enter (msg) ->
     msg.send "yo #{msg.message.user.name}"
 
