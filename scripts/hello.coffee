@@ -19,3 +19,6 @@ module.exports = (robot) ->
 
   robot.leave (msg) ->
     msg.send "bye #{msg.message.user.name}"
+
+  robot.topic (msg) ->
+    msg.reply "トピックを変更しないで #{msg.message.user.name}"
