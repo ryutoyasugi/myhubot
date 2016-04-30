@@ -12,7 +12,7 @@ module.exports = (robot) ->
     msg.send "ya!"
 
   robot.respond /hi$/i, (msg) ->
-    msg.send "hi!"
+    msg.send "Hi!"
 
   robot.enter (msg) ->
     msg.send "yo #{msg.message.user.name}"
