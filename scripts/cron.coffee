@@ -21,3 +21,4 @@ module.exports = (robot) ->
       robot.send envelope, articleUrl
   )
   cronjob.start()
+
